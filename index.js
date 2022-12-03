@@ -1,22 +1,40 @@
-for(let i=0;i<=10;i++){
-    console.log("#Number"+i);
+let person={
+   name:"sathish",
+   age:27,
+   intrest:"palying foodball and cricket",
+   stats :"married",
+greeting:function () {
+    let  mgs='Hi  my  name is   '  +this.name+ 'my hoby ' + this.intrest;
+console.log(mgs)
 }
+};
+console.log(person.greeting());
 
 
 
 
-let moblie=40000;
-switch(true){
-    case( moblie>55000):  
-    console.log("Iphone");
-    break;
-    case (moblie >30000):
-        console.log("android");
-        break;
-        case (moblie>5000):
-            console.log("basics");
-            break;
-          default:
-            console.log("you can't afford moblie phone");
-          
+
+
+
+
+
+//<----do-while--->
+let i=1;
+do {
+    if (i % 2 !==0 ) {
+        console.log("Number#"+i);
+
+    }
+    i++;
+}while(i<=20)
+//<----for in---->
+/*const person ={
+    name :'venkatesh',
+    age: 21,
+    sex:'male'
+
+};
+for( let key in person){
+    console.log(key+";",person[key]);
 }
+*/
